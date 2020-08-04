@@ -27,9 +27,11 @@ Current project structure is described as a tree below:
 ### There are 3 types in total to nagivate screens:
 
 - **Stack Navigation**:
+
   - Save screens history as stack, have a same mechanism with web history.
   - Usually control by screen header.
   - Common use cases: detail or description screen, modal,...
+
 - **Tabs Navigation**:
 
   - Usually bottom tabs control, which is used as an app menu.
@@ -43,8 +45,13 @@ Current project structure is described as a tree below:
 ### Render behavior
 
 - **Stack Navigation**:
+  To illustrate easily, lets take our example, `Home` screen. At `Home` screen, we will switch between 2 stacks, `Home Content` and `Home Modal`. The stack rendering behavior will be described as below:
+  - First of all, `Home` screen is rendered.
+  - Then we have the initial stack will be rendered right after that, so `Home Content` will be rendered.
+  - Next, when we click to open the `Home Modal`, of course the `Home Modal` will be rendered, **however**, `Home Content` has not been unmounted yet. It is stayed in stack, and yeah, for the `goBack` method, specified by stack navigator, so the componentWillUnmount of `Home Content` is not called.
+  - Finally, when we go back to `Home Content`, the componentWillUnmount of `Home Modal` will be called, but componentDidMount of `Home Content` won't be, cause it remains mounted on the stack already.
 
-  - Render
+> **Important**: every time we navigate between tabs, the `Home` screen will trigger its render, it means the componentDidMount of `Home` screen will be called every time we navigate.
 
 - **Tabs Navigation**:
   - We can control tabs rendering behaviour by the "lazy" props, already provided in the library.
