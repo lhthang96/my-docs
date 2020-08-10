@@ -22,6 +22,14 @@ Current project structure is described as a tree below:
 
 ```
 
+## Common react-navigation hooks
+
+### useNavigation
+
+Using for to access global scope navigation variable.
+
+> **Note**: When using this hook to navigate by screen name, react-navigator will search from the inside out. For example, if u have a parent stack navigator with 2 screen names `Home` and `Detail`, then another stack navigator nested inside `Home` screen with 2 children names `Post` and `Detail`.
+
 ## Notes
 
 ### There are 3 types in total to nagivate screens:
@@ -52,6 +60,7 @@ Current project structure is described as a tree below:
   - Finally, when we go back to `Home Content`, the componentWillUnmount of `Home Modal` will be called, but componentDidMount of `Home Content` won't be, cause it remains mounted on the stack already.
 
 > **Important**: every time we navigate between tabs, the `Home` screen will trigger its render, it means the componentDidMount of `Home` screen will be called every time we navigate.
+> </br>
 
 - **Tabs Navigation**:
   - We can control tabs rendering behaviour by the "lazy" props, already provided in the library.
