@@ -48,37 +48,55 @@ Based on the app state and messages content, we can determine if it would be dis
     <tr>
       <td>Notification</td>
       <td style="text-align: center">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/OOjs_UI_icon_close-ltr-destructive.svg/768px-OOjs_UI_icon_close-ltr-destructive.svg.png" style="width: 20px; height: 20px" alt="close-icon" />
+        <div style="width: 20px; height: 20px; margin: auto">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/OOjs_UI_icon_close-ltr-destructive.svg/768px-OOjs_UI_icon_close-ltr-destructive.svg.png" style="width: 20px; height: 20px" alt="close-icon" />
+        </div>
       </td>
       <td style="text-align: center">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Icons8_flat_checkmark.svg/768px-Icons8_flat_checkmark.svg.png" style="width: 20px; height: 20px" alt="checkmark" />
+        <div style="width: 20px; height: 20px; margin: auto">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Icons8_flat_checkmark.svg/768px-Icons8_flat_checkmark.svg.png" style="width: 20px; height: 20px" alt="checkmark" />
+        </div>
       </td>
       <td style="text-align: center">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Icons8_flat_checkmark.svg/768px-Icons8_flat_checkmark.svg.png" style="width: 20px; height: 20px" alt="checkmark" />
+        <div style="width: 20px; height: 20px; margin: auto">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Icons8_flat_checkmark.svg/768px-Icons8_flat_checkmark.svg.png" style="width: 20px; height: 20px" alt="checkmark" />
+        </div>
       </td>
     </tr>
     <tr>
       <td>Notification + Data</td>
       <td style="text-align: center">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/OOjs_UI_icon_close-ltr-destructive.svg/768px-OOjs_UI_icon_close-ltr-destructive.svg.png" style="width: 20px; height: 20px" alt="close-icon" />
+        <div style="width: 20px; height: 20px; margin: auto">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/OOjs_UI_icon_close-ltr-destructive.svg/768px-OOjs_UI_icon_close-ltr-destructive.svg.png" style="width: 20px; height: 20px" alt="close-icon" />
+        </div>
       </td>
       <td style="text-align: center">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Icons8_flat_checkmark.svg/768px-Icons8_flat_checkmark.svg.png" style="width: 20px; height: 20px" alt="checkmark" />
+        <div style="width: 20px; height: 20px; margin: auto">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Icons8_flat_checkmark.svg/768px-Icons8_flat_checkmark.svg.png" style="width: 20px; height: 20px" alt="checkmark" />
+        </div>
       </td>
       <td style="text-align: center">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Icons8_flat_checkmark.svg/768px-Icons8_flat_checkmark.svg.png" style="width: 20px; height: 20px" alt="checkmark" />
+        <div style="width: 20px; height: 20px; margin: auto">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Icons8_flat_checkmark.svg/768px-Icons8_flat_checkmark.svg.png" style="width: 20px; height: 20px" alt="checkmark" />
+        </div>
       </td>
     </tr>
     <tr>
       <td>Data</td>
       <td style="text-align: center">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/OOjs_UI_icon_close-ltr-destructive.svg/768px-OOjs_UI_icon_close-ltr-destructive.svg.png" style="width: 20px; height: 20px" alt="close-icon" />
+        <div style="width: 20px; height: 20px; margin: auto">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/OOjs_UI_icon_close-ltr-destructive.svg/768px-OOjs_UI_icon_close-ltr-destructive.svg.png" style="width: 20px; height: 20px" alt="close-icon" />
+        </div>
       </td>
       <td style="text-align: center">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/OOjs_UI_icon_close-ltr-destructive.svg/768px-OOjs_UI_icon_close-ltr-destructive.svg.png" style="width: 20px; height: 20px" alt="close-icon" />
+        <div style="width: 20px; height: 20px; margin: auto">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/OOjs_UI_icon_close-ltr-destructive.svg/768px-OOjs_UI_icon_close-ltr-destructive.svg.png" style="width: 20px; height: 20px" alt="close-icon" />
+        </div>
       </td>
       <td style="text-align: center">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/OOjs_UI_icon_close-ltr-destructive.svg/768px-OOjs_UI_icon_close-ltr-destructive.svg.png" style="width: 20px; height: 20px" alt="close-icon" />
+        <div style="width: 20px; height: 20px; margin: auto">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/OOjs_UI_icon_close-ltr-destructive.svg/768px-OOjs_UI_icon_close-ltr-destructive.svg.png" style="width: 20px; height: 20px" alt="close-icon" />
+        </div>
       </td>
     </tr>
     <tr>
