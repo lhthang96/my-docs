@@ -88,7 +88,7 @@ In Android devices, there is a Back button, by default, react-navigation sees it
 
 **How to handle it**
 
-React Native gives us a API to refer to this event, `BackHandler`.
+React Native gives us an API to refer to this event, `BackHandler`.
 
 `Backhandler` provides events to subscribe Android Back button event, which is called `hardwareBackPress`. The following code sample illustrates a way to prevent user exitting our apps when there is no screens to pop:
 
@@ -120,6 +120,6 @@ export const RootNavigation: React.FC = () => {
 }
 ```
 
-> **Note**: The `onBackPress` callback is a function returning a boolean value, which is false to trigger the goBack behavior of the Back button and true is doing nothing.
+> **Note**: The `onBackPress` callback is a function returning a boolean value. If it was false, the back button would trigger the goBack behavior as default and it it was true, the button would do nothing.
 
 > **Tip**: A better approach for this situation is when there is no screens to pop, show a popup to user to confirm if they wanted to exit an apps or not
