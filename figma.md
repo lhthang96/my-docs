@@ -1,4 +1,4 @@
-# Figma - Web and application prototyping tool
+# Figma - Web and mobile application prototyping tool
 
 ## Mask and background
 

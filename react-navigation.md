@@ -77,3 +77,49 @@ Using for to access global scope navigation variable.
 - Go to installed tree directory, default is `C:\Program Files (x86)\GnuWin32\bin`, copy `tree.exe`
 - Paste it to installed git directory, default is `C:\Program Files\Git\usr\bin`.
 - All done, to check if it worked, open git bash and type command `tree`.
+
+### Handle Android back button
+
+Ref: https://reactnavigation.org/docs/custom-android-back-button-handling/
+
+> By default, when user presses the Android hardware back button, react-navigation will pop a screen or exit the app if there are no screens to pop. This is a sensible default behavior, but there are situations when you might want to implement custom handling.
+
+In Android devices, there is a Back button, by default, react-navigation sees it as a goBack() method, which is applied to all kind of navigators (stack, tabs and drawer).
+
+**How to handle it**
+
+React Native gives us a API to refer to this event, `BackHandler`.
+
+`Backhandler` provides events to subscribe Android Back button event, which is called `hardwareBackPress`. The following code sample illustrates a way to prevent user exitting our apps when there is no screens to pop:
+
+```
+import React, { useEffect, useRef } from 'react';
+import { BackHandler } from 'react-native';
+import { NavigationContainer } from 'react-navigation';
+
+export const RootNavigation: React.FC = () => {
+  const rootNavigationRef = useRef(null);
+
+  const onBackPress = () => {
+    return !rootNavigationRef.current?.navigation?.canGoback() || false;
+  }
+
+  useEffect(() => {
+    BackHandler.addEventListener('hardwareBackPress', onBackPress);
+
+    return () => {
+      BackHandler.removeEventListener('hardwareBackPress', onBackPress);
+    }
+  }, [])
+
+  return (
+    <NavigationContainer ref={rootNavigationRef}>
+      {...someNavigators}
+    </NavigationContainer>
+  )
+}
+```
+
+> **Note**: The `onBackPress` callback is a function returning a boolean value, which is false to trigger the goBack behavior of the Back button and true is doing nothing.
+
+> **Tip**: A better approach for this situation is when there is no screens to pop, show a popup to user to confirm if they wanted to exit an apps or not
