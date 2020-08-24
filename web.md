@@ -33,3 +33,21 @@
 - Having `expires` property to indicate valid time.
 
 > **Tip:** Using `secure flag` to enhance security for cookie, it would be sent only when the connection is SSL.
+
+## Intersection Observer API
+
+**Ref**: https://viblo.asia/p/intersection-observer-javascript-api-cuc-hay-ma-ban-chua-tung-nghe-den-gDVK2ndwKLj?fbclid=IwAR03WFrGtkl-x-FdYLsffn7tgTKheWOl4JZ6At32VXR45LBljuMojTaUfLo
+
+**Recommend**: https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API
+
+> `Intersection Observer` is a JavaScript API which can help you trigger a callback when user scroll to a specific element.
+
+> **MDN web docs**: The Intersection Observer API provides a way to asynchronously observe changes in the intersection of a target element with an ancestor element or with a top-level document's viewport.
+
+### Usage
+
+**Example:** : https://codepen.io/tranxuanthang/pen/zYqqgxP
+
+```
+const observer = new IntersectionObserver(callback, options)
+```
